@@ -9,22 +9,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Bootstrap Navigation Dashboard</title>
-
-    <style>
-        /* .nav-pills {
-        color: #FFFFFF;
-        pill-color: rgb(17, 146, 163); */
-    }
-    
+  
     </style>
   </head>
   <body>
     
     <nav class="navbar navbar-expand-sm navbar-light bg-info">
 
-            <a href="#" class="nav-link active text-light ">Latitude</a>
-            
-            <br />
+            <ul class="nav navbar-nav">
+                    <li>
+                         <a href="index.html" class="nav-link active text-light "><h2>Latitude</h2></a>
+                    </li>            
+            </ul>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,10 +30,10 @@
                             <a class="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Plots</a>
         
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Max ATemperature</a>
-                                <a class="dropdown-item" href="#">Humidity</a>
-                                <a class="dropdown-item" href="#">Cloudness</a>
-                                <a class="dropdown-item" href="#">Wind Speed</a>
+                                <a class="dropdown-item" href="temperature.html">Max ATemperature</a>
+                                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                <a class="dropdown-item" href="cloudiness.html">Cloudness</a>
+                                <a class="dropdown-item" href="windSpeed">Wind Speed</a>
                             </div>
                     </li>
         
@@ -46,7 +42,7 @@
                     </li>
         
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Data</a>
+                        <a href="data.html" class="nav-link text-light">Data</a>
                         </li>
                 </ul>
             </div>
@@ -63,9 +59,9 @@
                     <p>click any plot to get an in-depth analysis.</p>                     
                         <div class='row'>                            
                                 <div class="col-md-6 col-sm-12">
-                                        <h3 class="text-info text-center ">vs. Max Temperature</h3>
-                                        <a href="temperature.html"></a>
-                                        <img src="Resources\assets\images\Fig1.png"width="400" height="400">
+                                    <h3 class="text-info text-center ">vs. Max Temperature</h3>
+                                    <a href="temperature.html"></a>
+                                    <img src="Resources\assets\images\Fig1.png"width="400" height="400">
                                 </div>
                                 <div class="col-md-6 col-sm-12">
                                     <h3 class="text-info text-center">vs. Humidity</h3>
@@ -84,8 +80,7 @@
                                     <img src="Resources\assets\images\Fig4.png"width="400" height="400">
                                 </div>
                         </div>
-                    <!-- </div> -->
-             </div>
+                </div>
               
         </div>
     </div>
